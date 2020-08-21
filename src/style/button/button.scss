@@ -1,0 +1,54 @@
+@import '../common/var.scss';
+
+.f-button {
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  padding: 8px 20px;
+  margin-bottom: 10px;
+  transition: opacity .2s;
+  &:active {
+    opacity: .8;
+  }
+
+  // 各种颜色类型
+  &-primary {
+    background-color: $--color-nomal;
+    color: $--color-white;
+  }
+  &-danger {
+    background-color: $--color-danger;
+    color: $--color-white;
+  }
+  &-success {
+    background-color: $--color-success;
+    color: $--color-white;
+  }
+
+  // 是否占全行
+  &-full {
+    width: 100%;
+    display: block;
+  }
+  &-inline {
+    display: inline;
+  }
+  
+  // 按钮尺寸
+  &-normal {
+    padding: 8px 20px;
+  }
+  &-big {
+    padding: 10px 26px;
+    font-size: $--size-big;
+  }
+  &-small {
+    padding: 6px 14px;
+    font-size: $--size-small;
+  }
+
+  // 是否禁用
+  &:disabled {
+    background-color: $--color-disabled;
+  }
+}

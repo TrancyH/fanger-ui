@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import TopBar from './TopBar.vue'
 import Icon from './Icon'
+import fButton from './Button'
 const Components = {
-  TopBar,
-  Icon
+  Icon,
+  fButton
 }
 
 Object.keys(Components).forEach(name => {
@@ -14,5 +14,5 @@ export default Components
 
 export {
   Icon,
-  TopBar
+  fButton
 }
